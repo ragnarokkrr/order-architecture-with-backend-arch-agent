@@ -1,0 +1,56 @@
+Prompts
+=======
+
+PR1
+---
+
+```
+use rgn.backend-architect agent to design a microservices architecture for a order processing 
+system based in 3 services: exityorder, payment, inventory. All 
+services are java services based on Spring Boot. Order uses 
+Hexagonal Architecture Pattern, payment and inventory are 
+designed based on Vertical Slice pattern. We Follow the single 
+database per service principle. Order s/pluervice should implement 
+the SAGA design pattern based on compensating transactions 
+pattern. When one transaction finishes successfully, Order 
+emmits a specific event for that transaction. Order Service 
+Uses Postgres, payment and inventory uses Mongo DB. 
+```
+
+
+PR2
+---
+
+```
+use rgn.backend-architect agent to refine git workflow: Use Git Workflow based on Main Branch, Active Deveopment Branch and Feature Branches with Release tags and eventual Hot Fix Branches.
+
+we'll continue using feature flags.
+
+```
+
+PR3
+---
+```
+agent rgn.backend-architect 
+We are developing an MVP1 so will defer the following features:
+
+- Payment gateway integration. Payment service won't integrate with external Payment Gateway at this moment. We'll use record the payment transactions in payment service DB.
+
+- Order API Gateway integration
+
+- AVRO serialization for Kafka. We'll use plain JSON for now.
+
+- Security integration.
+
+
+Record this as Key Decisions in Architecture Document as deferred to MVP2. We'll place specific ADR's if we change this in future.
+
+```
+
+PR4
+---
+
+```
+use this base package: ragna.ecommerce
+```
+
